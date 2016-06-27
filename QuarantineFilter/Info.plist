@@ -7,40 +7,43 @@
 		<key>Container</key>
 		<string>List</string>
 		<key>Optional</key>
-		<true/>
+		<false/>
 		<key>Types</key>
 		<array>
-			<string>com.apple.cocoa.path</string>
+			<string>com.apple.cocoa.url</string>
 		</array>
 	</dict>
 	<key>AMApplication</key>
-	<string>(* Primary Application used by this action goes here. *)</string>
+	<string>Finder</string>
 	<key>AMCanShowSelectedItemsWhenRun</key>
 	<false/>
 	<key>AMCanShowWhenRun</key>
 	<true/>
 	<key>AMCategory</key>
-	<string>(* Category of this action goes here. *)</string>
+	<string>AMCategoryFilesAndFolders</string>
 	<key>AMDefaultParameters</key>
-	<dict/>
+	<dict>
+		<key>filterTag</key>
+		<integer>0</integer>
+	</dict>
 	<key>AMDescription</key>
 	<dict>
 		<key>AMDAlert</key>
-		<string>(* AMDAlert text goes here. (optional) *)</string>
+		<string></string>
 		<key>AMDInput</key>
-		<string>(* AMDInput text to further explain the types accepted as input goes here. (optional) *)</string>
+		<string>List of files</string>
 		<key>AMDNote</key>
-		<string>(* AMDNote text goes here. (optional) *)</string>
+		<string></string>
 		<key>AMDOptions</key>
-		<string>(* AMDOptions text to further explain configuration options in the UI goes here. (optional) *)</string>
+		<string></string>
 		<key>AMDRelatedActions</key>
-		<string>(* AMDRelatedActions bundle ids go here. (optional) *)</string>
+		<string></string>
 		<key>AMDRequires</key>
 		<string>(* AMDRequires text to explain anything outside of Automator required for the action's operation, e.g. a web page open in Safari, goes here. (optional) *)</string>
 		<key>AMDResult</key>
-		<string>(* AMDResult text to further explain the types provided as output goes here. (optional) *)</string>
+		<string>filtered list of files</string>
 		<key>AMDSummary</key>
-		<string>(* AMDSummary text to explain what your action does goes here. *)</string>
+		<string>Filters an array of files based on their quarantine type</string>
 		<key>AMDWebsite</key>
 		<string>(* AMDWebsite URL to additional information or documentation for the action goes here. (optional) *)</string>
 	</dict>
@@ -56,7 +59,7 @@
 		<string>List</string>
 		<key>Types</key>
 		<array>
-			<string>com.apple.cocoa.path</string>
+			<string>com.apple.cocoa.url</string>
 		</array>
 	</dict>
 	<key>AMRequiredResources</key>

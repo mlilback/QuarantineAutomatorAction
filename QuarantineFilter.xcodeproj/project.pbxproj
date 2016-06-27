@@ -19,6 +19,8 @@
 		08F189D11D21C88800866A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/main.xib; sourceTree = "<group>"; };
 		08F189D31D21C88800866A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08F189D51D21C88800866A05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08F189DC1D21DC7E00866A05 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		08F189DD1D21E02800866A05 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,8 @@
 		08F189C01D21C88800866A05 = {
 			isa = PBXGroup;
 			children = (
+				08F189DC1D21DC7E00866A05 /* README.md */,
+				08F189DD1D21E02800866A05 /* LICENSE */,
 				08F189CC1D21C88800866A05 /* Quarantine Filter */,
 				08F189CB1D21C88800866A05 /* Products */,
 			);
@@ -57,7 +61,8 @@
 				08F189D31D21C88800866A05 /* Info.plist */,
 				08F189D41D21C88800866A05 /* InfoPlist.strings */,
 			);
-			path = "Quarantine Filter";
+			name = "Quarantine Filter";
+			path = QuarantineFilter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,10 +97,11 @@
 				TargetAttributes = {
 					08F189C91D21C88800866A05 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = V97NV337TR;
 					};
 				};
 			};
-			buildConfigurationList = 08F189C41D21C88800866A05 /* Build configuration list for PBXProject "Quarantine Filter" */;
+			buildConfigurationList = 08F189C41D21C88800866A05 /* Build configuration list for PBXProject "QuarantineFilter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -190,7 +196,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer: Mark Lilback (ZJLV2664FQ)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -234,7 +240,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer: Mark Lilback (ZJLV2664FQ)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -256,12 +262,15 @@
 		08F189DA1D21C88800866A05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Quarantine Filter/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Automator";
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lilback.Quarantine-Filter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = action;
 			};
 			name = Debug;
@@ -269,12 +278,15 @@
 		08F189DB1D21C88800866A05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Quarantine Filter/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Automator";
 				OTHER_OSAFLAGS = "-x -t 0 -c 0";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lilback.Quarantine-Filter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = action;
 			};
 			name = Release;
@@ -282,7 +294,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		08F189C41D21C88800866A05 /* Build configuration list for PBXProject "Quarantine Filter" */ = {
+		08F189C41D21C88800866A05 /* Build configuration list for PBXProject "QuarantineFilter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08F189D71D21C88800866A05 /* Debug */,
@@ -298,6 +310,7 @@
 				08F189DB1D21C88800866A05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

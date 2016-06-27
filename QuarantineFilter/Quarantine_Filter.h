@@ -2,13 +2,15 @@
 //  Quarantine_Filter.h
 //  Quarantine Filter
 //
-//  Created by Mark Lilback on 6/27/16.
-//  Copyright © 2016 Mark Lilback. All rights reserved.
+//  Copyright © 2016 Mark Lilback. This file is licensed under the ISC license.
 //
 
+#import <Cocoa/Cocoa.h>
 #import <Automator/AMBundleAction.h>
 
 @interface Quarantine_Filter : AMBundleAction
+@property (strong) IBOutlet NSPopUpButton *filterPopup;
+@property NSInteger selectedFilterTag;
 
 - (id)runWithInput:(id)input fromAction:(AMAction *)anAction error:(NSDictionary **)errorInfo;
 

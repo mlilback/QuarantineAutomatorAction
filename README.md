@@ -4,6 +4,7 @@ This is an Automator action that filters files based on their quarantine type (i
 
 ### Example Workflow
 
-<img src="https://github.com/mlilback/QuarantineAutomatorAction/raw/master/sample-workflow.png" alt="Example Workflow" width=700">
+![Example Workflow](https://github.com/mlilback/QuarantineAutomatorAction/raw/master/sample-workflow.png)
+                                                                                                                      
 
 Licensed under the ISC license.
